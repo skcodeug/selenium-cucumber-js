@@ -1,0 +1,18 @@
+IMPLEMENT SELENIUM-WEBDRIVER TO RUN TESTS ON REAL WORLD WEB PAGES
+
+1. Search for 'selenium-cucumber-js' on https://www.npmjs.com
+2. Navigate to its GitHub link and click it then Fork the repository
+3. Pick the link from repository in my account and clone it to local drive
+    https://github.com/skcodeug/selenium-cucumber-js.git
+4. Restore the packages as listed in the package.json using 'npm i'
+5. Specifically, Chromedriver is outdated; reinstall/upgrade it using:
+    npm install chromedriver --chromedriver_version=LATEST
+6. Install the required selenium driver: 
+    npm install selenium-cucumber-js --save-dev --force
+7. Given that the package to download has the same name, add '--force'
+8. In the 'index.js', increase the timeout value from '15000' to '60000'
+9. The idea behind is too little time is allocated so it fails to get results
+10. Run the test suite using: 'npm test' OR 'node index.js' as per 'package.json'
+11. It will produce a Cucumber HTML report giving the results but opens in Safari!
+12. On success, it shows all passed for the 3 scenarios & 8 steps 
+

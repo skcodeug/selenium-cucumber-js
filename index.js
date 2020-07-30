@@ -30,7 +30,7 @@ var config = {
     reports: './reports',
     browser: 'chrome',
     browserTeardownStrategy: 'always',
-    timeout: 15000
+    timeout: 60000
 };
 
 var configFileName = path.resolve(process.cwd(), 'selenium-cucumber-js.json');
